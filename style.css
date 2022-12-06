@@ -15,7 +15,7 @@ margin: 25px;
  .calculator {
     background-color: black;
     width:563px;
-    height: 1218px;
+    height: 1115px;
     padding: 20px;
     border-radius: 50px;
  }
@@ -28,7 +28,7 @@ margin: 25px;
 
  }
  .display {
-
+margin-top: 180px;
     text-align: right;
     height: 158px;
     font-size: 130px;
@@ -38,6 +38,8 @@ margin: 25px;
  }
  
  .buttons-container {
+    font-size: 130px;
+
     display: grid;
     grid-gap: 20px;
     grid-template-rows: repeat(5,1fr);
@@ -69,7 +71,7 @@ margin: 25px;
  }
 
  .button.operator {
-    background-color: #f1833c;
+    background-color: #f59133;
  }
  .button.number-0 {
      border-radius: 55px;
@@ -77,4 +79,13 @@ margin: 25px;
      justify-content: flex-start;
      padding-left: 43px;
      width: 250px;
+ } 
+
+ .bottom {
+    margin-left:161.5px;
+    margin-top: 55px;
+    width: 200px;
+    height: 5px;
+    background-color: white;
+    border-radius: 1px;
  }
