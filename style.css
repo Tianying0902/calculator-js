@@ -56,8 +56,11 @@ margin: 25px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    /*transition need duration to do filter button(more smoothly)*/
+    transition:filter 1s ;
  }
 .button:active,.button:focus,.button:hover {
+    /*use filter to filter buttons*/
     filter:brightness(120%)
 }
  .button.function {
