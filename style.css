@@ -2,9 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /*To control whether user can choose the text*/
+    user-select: none;
  }
 
  body {
+    font-family: "Helvetica Neue",sans-serif;
 margin: 25px;
  }
 
@@ -14,4 +17,12 @@ margin: 25px;
     height: 1218px;
     padding: 20px;
     border-radius: 50px;
+ }
+ .top-container {
+     padding: 0 20px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .clock {
+    color:white
  }
