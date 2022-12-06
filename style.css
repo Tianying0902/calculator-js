@@ -25,5 +25,53 @@ margin: 25px;
      justify-content: space-between;
  }
  .clock {
-    color:white
+
+ }
+ .display {
+
+    text-align: right;
+    height: 158px;
+    font-size: 130px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-right: 20px;
+ }
+ 
+ .buttons-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
+
+ }
+
+ .button {
+    text-align: center;
+    border-radius: 50%;
+    background-color: #333;
+    font-size:45px;
+    height:110px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+ }
+.button:active,.button:focus,.button:hover {
+    filter:brightness(120%)
+}
+ .button.function {
+    color:black;
+    background-color: #a5a5a5;
+ }
+
+ .button.operator {
+    background-color: #f1833c;
+ }
+ .button.number-0 {
+     border-radius: 55px;
+     grid-column:1/ span 2;
+     justify-content: flex-start;
+     padding-left: 43px;
+     width: 250px;
  }
