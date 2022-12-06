@@ -9,7 +9,7 @@ const updateTime = () => {
   const currentMinute = currentTime.getMinutes();
   // when the time length is two but we don not have enough time to show we have use '0' to fill up time
   hourEl.textContent = currentHour.toString();
-  minuteEl.textContent = currentMinute.toString();
+  minuteEl.textContent = currentMinute.toString().padStart(2, "0");
 };
 setInterval(updateTime, 1000);
 // avoid the first null
