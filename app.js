@@ -5,8 +5,12 @@ const minuteEl = document.querySelector(".minute");
 const updateTime = () => {
   const currentTime = new Date();
 
-  const currentHour = currentTime.getHours();
+  let currentHour = currentTime.getHours();
   const currentMinute = currentTime.getMinutes();
+  // judge our hour like 0-12 formatter
+  if (currentHour > 12) {
+    currentHour -= 12;
+  }
   // when the time length is two but we don not have enough time to show we have use '0' to fill up time
   hourEl.textContent = currentHour.toString();
   minuteEl.textContent = currentMinute.toString().padStart(2, "0");
