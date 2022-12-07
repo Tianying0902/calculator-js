@@ -67,7 +67,7 @@ const handleNumberClick = (numStr) => {
   }
 };
 
-// Add event listeners to the element
+// Add event listeners to number and decimal
 for (let i = 0; i < numberElArray.length; i++) {
   const numberEl = numberElArray[i];
   numberEl.addEventListener("click", () => {
@@ -80,6 +80,19 @@ decimalEl.addEventListener("click", () => {
   if (!currentValueStr.includes(".")) {
     valueEl.textContent = setStrAsValue(currentValueStr) + ".";
   }
+});
+
+// Add event listeners to functions
+acEl.addEventListener("click", () => {
+  setStrAsValue("0");
+});
+
+pmEl.addEventListener("click", () => {});
+
+percentEl.addEventListener("click", () => {
+  const currentValueStr = getValueWithoutComma();
+  const newValueNum = currentValueStr / 100;
+  setStrAsValue(newValueNum.toString());
 });
 
 // Set up the time
